@@ -1,0 +1,203 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/public/logo.png" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vite App</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+  <script src="https://kit.fontawesome.com/599a3a7868.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header id="header" role="banner">
+    <div class="header__inner">
+      <nav class="header__nav" role="navigation" aria-label="메인메뉴">
+        <ul>
+          <li><a href="#intro">intro</a></li>
+          <li><a href="#project">project</a></li>
+          <li><a href="#work">work</a></li>
+          <li><a href="#about">about</a></li>
+          <li><a href="#about">contact</a></li>
+        </ul>
+      </nav>
+      <div class="header__nav_mobile" id="headerToggle" aria-controls="primary-menu" aria-expanded="flase"
+        role="button">
+        <span></span>
+        <ul>
+          <li><a href="#intro">intro</a></li>
+          <li><a href="#project">project</a></li>
+          <li><a href="#work">work</a></li>
+          <li><a href="#about">about</a></li>
+          <li><a href="#about">contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </header>
+  <main id="main" role="main">
+    <!-- -------intro--------- -->
+    <section id="intro">
+      <!-- <figure>
+          <video src="./src/assets/217392.mp4" autoplay loop muted></video>
+        </figure> -->
+      <div class="circle"></div>
+      <div class="inner">
+        <div class="title">
+          <p>I want to be a</p>
+          <p>Creative</p>
+          <p>Challenge</p>
+          <p>Developer</p>
+          <p>Adventurer</p>
+        </div>
+        <p>PUBLISHER</p>
+      </div>
+    </section>
+    <!-- -------project--------- -->
+    <section id="project"   data-bg="#0000">
+      <div class="inner">
+        <div class="project-title flex">
+          <div class="project-mn">
+            <h1 class="text">PROJECT</h1>
+            <div>
+              <p class="project-mainmenu"><span>View my works</span> <i class="fa-solid fa-chevron-down"></i></p>
+              <ul class="project-submenu">
+                <li><a href="#">WEB RENEWAL</a></li>
+                <li><a href="#">APP PROJECT</a></li>
+                <li><a href="#">SYMBOL DESIGN</a></li>
+                <li><a href="#">PORTFOLIO WEBSITE</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="txt">
+            <p>지금까지의 여정에서 HTML, CSS, JavaScript 같은 기본기를 탄탄히 다지고,
+              이를 실제 프로젝트에 적용하며 성장해왔습니다.
+              시맨틱 태그를 활용한 구조화부터 웹 접근성과 반응형 디자인,
+              그리고 인터랙티브한 사용자 경험을 위한
+              JS와 jQuery까지, 다양한 기술을 배우고 실무에 녹여냈습니다.</p>
+          </div>
+        </div>
+        <div class="project-slide">
+          <div class="project-inner">
+            <div class="slide-area">
+              <div class="project_slide_l swiper-container">
+                <ul class="swiper-wrapper">
+                  <li class="swiper-slide slide01">
+                    <div class="img"></div>
+                    <div class="txt">
+                      <b>24.06</b>
+                      <span>SYMBOL DESIGN</span>
+                      <p>나를 표현한 나만의 심볼 디자인</p>
+                      <div class="flex">
+                        <em><a href="#">PROESS</a></em>
+                        <em><a href="#">FIGMA</a></em>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="swiper-slide slide02">
+                    <div class="img"></div>
+                    <div class="txt">
+                      <b>24.07</b>
+                      <span>WEB RENEWAL</span>
+                      <p class="h2">포인핸드 웹사이트 리뉴얼</p>
+                      <div class="flex">
+                        <em><a href="#">PROESS</a></em>
+                        <em><a href="#">FIGMA</a></em>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="swiper-slide slide03">
+                    <div class="img"></div>
+                    <div class="txt">
+                      <b>24.11</b>
+                      <span>APP PROJECT</span>
+                      <p class="h2">더 나은 여행 경험을 제공하는<br> 모바일 어플리케이션</p>
+                      <div class="flex">
+                        <em><a href="#">PROESS</a></em>
+                        <em><a href="#">FIGMA</a></em>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="swiper-slide slide04">
+                    <div class="img"></div>
+                    <div class="txt">
+                      <b>24.11.24~ING</b>
+                      <span>PORTFOLIO</span>
+                      <p class="h2">나의 이야기를 담아,<br> 웹을 통해 세상과 연결됩니다.</p>
+                      <div class="flex">
+                        <em><a href="#">PROESS</a></em>
+                        <em><a href="#">FIGMA</a></em>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+                <div class="slide_arrow">
+                  <p class="arrow prev"><span class="material-symbols-outlined">arrow_right_alt</span></p>
+                  <p class="arrow next"><span class="material-symbols-outlined">arrow_right_alt</span></p>
+                </div>
+              </div>
+              <div class="project_slide_r swiper-container">
+                <ul class="swiper-wrapper">
+                  <li class="swiper-slide slide02">
+                    <p class="img"></p>
+                  </li>
+                  <li class="swiper-slide slide03">
+                    <p class="img"></p>
+                  </li>
+                  <li class="swiper-slide slide04">
+                    <p class="img"></p>
+                  </li>
+                  <li class="swiper-slide slide01">
+                    <p class="img"></p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- -------work--------- -->
+    <section id="work"  data-bg="#0000">
+      <div class="banner">
+        <span>I will show you infinite possibilities. </span>
+        <span> 무한한 가능성을 보여드리겠습니다.💫</span>
+      </div>
+      <div class="inner flex">
+        <div class="inner-box">
+          <div class="work-desc">
+            <p>WORK<br>
+              ARCHIVE</p>
+          </div>
+          <ul class="flex work-list">
+            <li><a href="#" class="on"><img src="./src/assets/work.jpg" alt=""></a></li>
+            <li><a href="#"><img src="./src/assets/work.jpg" alt=""></a></li>
+            <li><a href="#"><img src="./src/assets/work.jpg" alt=""></a></li>
+            <li><a href="#"><img src="./src/assets/work.jpg" alt=""></a></li>
+            <li><a href="#"><img src="./src/assets/work.jpg" alt=""></a></li>
+            <li><a href="#"><img src="./src/assets/work.jpg" alt=""></a></li>
+            <li><a href="#"><img src="./src/assets/work.jpg" alt=""></a></li>
+            <li><a href="#"><img src="./src/assets/work.jpg" alt=""></a></li>
+            <li><a href="#"><img src="./src/assets/work.jpg" alt=""></a></li>
+            <li><a href="#"><img src="./src/assets/work.jpg" alt=""></a></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <!-- -------uxui--------- -->
+    <section id="uxui" data-bg="#fffff"> </section>
+    <!-- -------skill--------- -->
+    <section id="about"> </section>
+  </main>
+  <footer id="footer" role="contentinfo"></footer>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=arrow_right_alt"
+    rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script type="module" src="/main.js"></script>
+</body>
+
+</html>

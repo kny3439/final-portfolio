@@ -1,0 +1,124 @@
+@keyframes ani {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+.circle {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+  margin: auto;
+  width: 650px;
+  height: 650px;
+  border-radius: 50%;
+  background: var(--mainColor100-color);
+  animation: ani 3s alternate;
+}
+
+#intro {
+  width: 100%;
+  height: 100vh;
+  background-color: var(--black);
+  display: flex;
+  align-items: center;
+}
+#intro .inner {
+  width: 90%;
+  z-index: 2;
+  color: #fff;
+  mix-blend-mode: difference;
+}
+#intro .inner .title p:not(:first-child) {
+  color: var(--mainColor100-color);
+}
+
+@media (max-width: 700px) {
+  #intro .circle {
+    width: 400px;
+    height: 400px;
+  }
+  #intro .inner {
+    height: 85vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+  }
+  #intro .inner .title {
+    font-size: 5rem;
+  }
+  #intro .inner .title p {
+    margin: 25px 0;
+  }
+  #intro .inner .title p:nth-child(1) {
+    font-size: 4rem;
+  }
+  #intro .inner .title p:not(:first-child) {
+    color: var(--mainColor100-color);
+  }
+  #intro .inner > p {
+    font-size: 7rem;
+    font-weight: 600;
+    letter-spacing: 2vw;
+  }
+}
+@media (min-width: 701px) {
+  #intro .circle {
+    width: 500px;
+    height: 500px;
+  }
+  #intro .inner {
+    height: 85vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+  }
+  #intro .inner .title {
+    font-size: 6rem;
+  }
+  #intro .inner .title p {
+    margin: 20px 0;
+  }
+  #intro .inner .title p:nth-child(1) {
+    font-size: 5rem;
+  }
+  #intro .inner .title p:not(:first-child) {
+    color: var(--mainColor100-color);
+  }
+  #intro .inner > p {
+    font-size: 9rem;
+    font-weight: 600;
+    letter-spacing: 3.3vw;
+  }
+}
+@media (min-width: 1200px) {
+  #intro .inner {
+    width: 90%;
+    margin: auto;
+    z-index: 2;
+    color: #fff;
+    mix-blend-mode: difference;
+  }
+  #intro .inner .title {
+    font-size: 7rem;
+  }
+  #intro .inner .title p {
+    margin: 0;
+  }
+  #intro .inner .title p:nth-child(1) {
+    font-size: 5rem;
+  }
+  #intro .inner .title p:not(:first-child) {
+    color: var(--mainColor100-color);
+  }
+  #intro .inner > p {
+    font-size: 15vw;
+    font-weight: 600;
+    letter-spacing: 5vw;
+  }
+}

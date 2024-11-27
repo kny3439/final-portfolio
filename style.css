@@ -11,7 +11,9 @@
 @import url(./src/css/pages/project.css);
 @import url(./src/css/pages/work.css);
 @import url(./src/css/pages/about.css);
-@import url(./src/css/pages/about.css);
+@import url(./src/css/pages/contact.css);
+@import url(./src/css/pages/footer.css);
+
 
 
 .flex{

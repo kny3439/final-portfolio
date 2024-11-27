@@ -4,6 +4,7 @@
   top: 0;
   width: 100%;
   z-index: 99;
+  font-family: var(--font-family-Eng);
 }
 #header .header__inner {
   display: flex;

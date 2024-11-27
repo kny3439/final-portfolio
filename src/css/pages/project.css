@@ -5,14 +5,66 @@
   display: flex;
   align-items: center;
 }
-
+#project .inner .project-title .project-mn > div {
+  font-family: var(--font-family-Eng);
+}
+#project .inner .project-title .project-mn .text {
+  font-family: var(--font-family-Eng);
+}
+#project .inner .project-title .txt span {
+  color: var(--mainColor200-color);
+  font-weight: 500;
+}
 #project .inner .project-slide .project-inner .slide-area ul li .img {
   border-radius: 20px;
+}
+#project .inner .project-slide .project-inner .slide-area .project_slide_l .swiper-wrapper li {
+  display: flex;
+  gap: 50px;
+  opacity: 0 !important;
+  align-items: center;
+  pointer-events: all;
+  transition: 0.35s;
+}
+#project .inner .project-slide .project-inner .slide-area .project_slide_l .swiper-wrapper li.on {
+  opacity: 1 !important;
+  z-index: 99;
+}
+#project .inner .project-slide .project-inner .slide-area .project_slide_l .swiper-wrapper li .txt {
+  position: relative;
+  padding-top: 40px;
+  width: 330px;
+  text-align: left;
+  z-index: 99;
+}
+#project .inner .project-slide .project-inner .slide-area .project_slide_l .swiper-wrapper li .txt span {
+  font-family: var(--font-family-Eng);
+}
+#project .inner .project-slide .project-inner .slide-area .project_slide_l .swiper-wrapper li .txt > div {
+  gap: 8px;
+}
+#project .inner .project-slide .project-inner .slide-area .project_slide_l .swiper-wrapper li .txt > div em {
+  position: relative;
+}
+#project .inner .project-slide .project-inner .slide-area .project_slide_l .swiper-wrapper li .txt > div em:hover::after {
+  transform: scale(1);
+}
+#project .inner .project-slide .project-inner .slide-area .project_slide_l .swiper-wrapper li .txt > div em::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  background-color: var(--white);
+  left: 0;
+  bottom: 0;
+  transform: scale(0);
+  transition: 0.35s;
 }
 
 @media (max-width: 700px) {
   #project {
-    height: 100vh;
+    height: 100%;
+    padding: 10% 0;
   }
   #project .inner {
     width: 100%;
@@ -107,13 +159,13 @@
     font-size: 15px;
     line-height: 1.5rem;
     font-weight: 600;
-    font-family: "Alumni Sans";
     padding: 10px 0;
   }
   #project .inner .project-slide .project-inner .slide-area .project_slide_l .swiper-wrapper li .txt b,
   #project .inner .project-slide .project-inner .slide-area .project_slide_l .swiper-wrapper li .txt span,
   #project .inner .project-slide .project-inner .slide-area .project_slide_l .swiper-wrapper li .txt em {
     display: block;
+    padding: 5px;
   }
   #project .inner .project-slide .project-inner .slide-area .project_slide_l .swiper-wrapper li .txt span {
     font-size: 2.2rem;
@@ -230,29 +282,32 @@
     gap: 50px;
     opacity: 0 !important;
     align-items: center;
+    pointer-events: all;
+    transition: 0.35s;
   }
   #project .inner .project-slide .project-inner .slide-area .project_slide_l .swiper-wrapper li.on {
     opacity: 1 !important;
+    z-index: 99;
   }
   #project .inner .project-slide .project-inner .slide-area .project_slide_l .swiper-wrapper li .txt {
     position: relative;
     padding-top: 40px;
     width: 330px;
     text-align: left;
+    z-index: 99;
   }
   #project .inner .project-slide .project-inner .slide-area .project_slide_l .swiper-wrapper li .txt p {
     display: block;
     font-size: 16px;
     line-height: 30px;
     font-weight: 600;
-    font-family: "Alumni Sans";
     line-height: 1.5rem;
     padding-bottom: 10px;
   }
   #project .inner .project-slide .project-inner .slide-area .project_slide_l .swiper-wrapper li .txt b,
   #project .inner .project-slide .project-inner .slide-area .project_slide_l .swiper-wrapper li .txt span,
   #project .inner .project-slide .project-inner .slide-area .project_slide_l .swiper-wrapper li .txt em {
-    padding-right: 10px;
+    padding: 3px;
     display: block;
   }
   #project .inner .project-slide .project-inner .slide-area .project_slide_l .swiper-wrapper li .txt span {
@@ -262,7 +317,7 @@
   #project .inner .project-slide .project-inner .slide-area .project_slide_l .slide_arrow {
     position: absolute;
     left: 400px;
-    top: 320px;
+    top: 330px;
     cursor: pointer;
     z-index: 9;
   }
@@ -270,8 +325,8 @@
     display: inline-flex;
     justify-content: center;
     align-items: center;
-    width: 70px;
-    height: 70px;
+    width: 50px;
+    height: 50px;
     color: #fff;
     transition: all 0.3s;
   }
@@ -370,43 +425,28 @@
     width: 770px;
     margin: 0;
   }
-  #project .inner .project-slide .project-inner .slide-area .project_slide_l .swiper-wrapper li {
-    display: flex;
-    gap: 50px;
-    opacity: 0;
-    align-items: center;
-  }
-  #project .inner .project-slide .project-inner .slide-area .project_slide_l .swiper-wrapper li.on {
-    opacity: 1;
-  }
-  #project .inner .project-slide .project-inner .slide-area .project_slide_l .swiper-wrapper li .txt {
-    position: relative;
-    padding-top: 40px;
-    width: 330px;
-  }
   #project .inner .project-slide .project-inner .slide-area .project_slide_l .swiper-wrapper li .txt p {
     display: block;
     font-size: 16px;
     line-height: 30px;
     font-weight: 600;
-    font-family: "Alumni Sans";
-  }
-  #project .inner .project-slide .project-inner .slide-area .project_slide_l .swiper-wrapper li .txt p br {
-    display: none;
+    line-height: 1.5rem;
+    padding-bottom: 10px;
   }
   #project .inner .project-slide .project-inner .slide-area .project_slide_l .swiper-wrapper li .txt b,
   #project .inner .project-slide .project-inner .slide-area .project_slide_l .swiper-wrapper li .txt span,
   #project .inner .project-slide .project-inner .slide-area .project_slide_l .swiper-wrapper li .txt em {
-    padding-right: 10px;
+    padding: 3px;
     display: block;
   }
   #project .inner .project-slide .project-inner .slide-area .project_slide_l .swiper-wrapper li .txt span {
-    font-size: 4rem;
+    font-size: 3rem;
+    padding: 10px 0;
   }
   #project .inner .project-slide .project-inner .slide-area .project_slide_l .slide_arrow {
     position: absolute;
     left: 400px;
-    top: 320px;
+    top: 350px;
     cursor: pointer;
     z-index: 9;
   }
@@ -414,8 +454,8 @@
     display: inline-flex;
     justify-content: center;
     align-items: center;
-    width: 70px;
-    height: 70px;
+    width: 50px;
+    height: 50px;
     color: #fff;
     transition: all 0.3s;
   }

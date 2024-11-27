@@ -4,6 +4,7 @@
         display: flex;
         align-items: center;
         margin-top: 5%;
+
     }
 
     .inner {
@@ -13,6 +14,13 @@
     }
 }
 
+#about .inner figure figcaption p span {
+    font-family: 'Pretendard-Regular';
+}
+
+#about .about-banner {
+        font-family: var(--font-family-Eng);
+}
 
 @media (max-width:700px) {
     #about {
@@ -65,7 +73,7 @@
 
                     .skill {
                         width: 100%;
-                     
+
                         p {
                             font-weight: bold;
                         }
@@ -75,8 +83,9 @@
                             gap: 20px;
                             flex-wrap: wrap;
                             align-items: center;
+
                             li {
-                                width:10%;
+                                width: 10%;
 
                                 img {
                                     width: 100%;
@@ -146,6 +155,7 @@
                     height: 90%;
                     border-radius: 25px;
                 }
+
                 >.mobile {
                     display: none;
                 }
@@ -158,9 +168,9 @@
                         span {
                             margin-right: 30px;
 
-                            &.kor {
-                                font-size: 1rem;
-                            }
+                            // &.kor {
+                            //     font-size: 1rem;
+                            // }
 
                             &:nth-child(1) {
                                 font-weight: bold;
@@ -248,31 +258,32 @@
                     height: 100%;
                     border-radius: 25px;
                 }
+
                 >.mobile {
                     display: none;
                 }
 
                 figcaption {
                     p {
-                        font-size: 1.7rem;
+                        // font-size: 1.7rem;
                         margin: 20px 0;
 
                         span {
                             margin-right: 30px;
 
-                            &.kor {
-                                font-size: 1.2rem;
-                            }
+                            // &.kor {
+                            //     font-size: 1.2rem;
+                            // }
 
                             &:nth-child(1) {
-                                font-weight: bold;
+                                font-weight: normal;
                             }
                         }
                     }
 
                     .skill {
                         p {
-                            font-weight: bold;
+                            font-weight: normal;
                         }
 
                         ul {
@@ -303,12 +314,12 @@
                 align-items: center;
 
                 ul {
-                    margin: 20px 0;
+                    margin: 30px 0;
                     align-items: center;
 
                     li {
-                        font-size: 5rem;
-                        margin: 0 50px;
+                        font-size: 4.5rem;
+                        margin: 0 20px;
 
                         &.kor {
                             font-size: 4rem;

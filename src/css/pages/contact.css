@@ -9,6 +9,7 @@
 }
 #introduce .inner .contact-title h2 {
   color: var(--mainColor100-color);
+  font-family: var(--font-family-Eng);
 }
 #introduce .inner .contact-title p {
   color: var(--white);
@@ -19,6 +20,7 @@
 }
 #introduce .inner .contact-endless .endless {
   color: var(--mainColor100-color);
+  font-family: var(--font-family-Eng);
 }
 #introduce .inner .contact-endless .white {
   color: var(--white);

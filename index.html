@@ -20,7 +20,7 @@
           <li><a href="#project">project</a></li>
           <li><a href="#work">work</a></li>
           <li><a href="#about">about</a></li>
-          <li><a href="#about">contact</a></li>
+          <li><a href="#c">contact</a></li>
         </ul>
       </nav>
       <div class="header__nav_mobile" id="headerToggle" aria-controls="primary-menu" aria-expanded="flase"
@@ -31,7 +31,7 @@
           <li><a href="#project">project</a></li>
           <li><a href="#work">work</a></li>
           <li><a href="#about">about</a></li>
-          <li><a href="#about">contact</a></li>
+          <li><a href="#introduce">contact</a></li>
         </ul>
       </div>
     </div>
@@ -55,7 +55,7 @@
       </div>
     </section>
     <!-- -------project--------- -->
-    <section id="project" data-bg="#0000">
+    <section id="project" data-bg="#000000">
       <div class="inner">
         <div class="project-title flex">
           <div class="project-mn">
@@ -73,8 +73,8 @@
           <div class="txt">
             <p>지금까지의 여정에서 HTML, CSS, JavaScript 같은 기본기를 탄탄히 다지고,
               이를 실제 프로젝트에 적용하며 성장해왔습니다.
-              시맨틱 태그를 활용한 구조화부터 웹 접근성과 반응형 디자인,
-              그리고 인터랙티브한 사용자 경험을 위한
+              시맨틱 태그를 활용한 <span>구조화</span>부터 <span>웹 접근성과 반응형 디자인</span>,
+              그리고 인터랙티브한 <span>사용자 경험</span>을 위한
               JS와 jQuery까지, 다양한 기술을 배우고 실무에 녹여냈습니다.</p>
           </div>
         </div>
@@ -159,10 +159,18 @@
       </div>
     </section>
     <!-- -------work--------- -->
-    <section id="work" data-bg="#0000">
+    <section id="work" data-bg="#000000">
       <div class="banner">
-        <span>I will show you infinite possibilities. </span>
-        <span> 무한한 가능성을 보여드리겠습니다.💫</span>
+        <div class="splide">
+          <div class="splide__track">
+            <ul class="splide__list">
+              <li class="splide__slide">I will show you infinite possibilities. </li>
+              <li class="splide__slide" style="font-size: 1.4rem;">무한한 가능성을 보여드리겠습니다.💫</li>
+              <li class="splide__slide">I will show you infinite possibilities. </li>
+              <li class="splide__slide" style="font-size: 1.4rem;">무한한 가능성을 보여드리겠습니다.💫</li>
+            </ul>
+          </div>
+        </div>
       </div>
       <div class="inner flex">
         <div class="inner-box">
@@ -260,10 +268,10 @@
       </div>
     </section>
     <!-- -------skill--------- -->
-    <section id="about" data-bg="#fffff">
+    <section id="about" data-bg="#ffffff">
       <div class="about-banner">
-        <span>ABOUT ME🚀</span><span>ABOUT ME👽</span><span>ABOUT ME💭</span> <span>ABOUT ME🚀</span><span>ABOUT
-          ME👽</span><span>ABOUT ME💭
+        <span>ABOUT ME🚀</span><span>ABOUT ME🚀</span><span>ABOUT ME🚀</span> <span>ABOUT ME🚀</span><span>ABOUT
+          ME🚀</span><span>ABOUT ME🚀
       </div>
       <div class="inner">
         <div class="introduce">
@@ -293,9 +301,9 @@
         <div class="word">
           <ul class="flex">
             <li class="side">FLEXIBLE</li>
-            <li class="top kor" style="font-weight: bold;">소통</li>
-            <li class="side">REACT</li>
-            <li class="top kor" style="font-weight: bold;">배움</li>
+            <li class="side kor" style="font-weight: bold;">소통</li>
+            <li class="top">REACT</li>
+            <li class="side kor" style="font-weight: bold;">배움</li>
             <li class="bottom">RESPONSIBILITY</li>
           </ul>
           <ul class="flex">
@@ -313,7 +321,7 @@
         </div>
       </div>
     </section>
-    <section id="introduce" data-bg="#0000">
+    <section id="introduce" data-bg="#ffffff">
       <div class="inner">
         <div class="contact-title">
           <h2>Shining like light</h2>
@@ -333,7 +341,7 @@
       </div>
     </section>
   </main>
-  <footer id="footer" role="contentinfo"  data-bg="#0000">
+  <footer id="footer" role="contentinfo"  data-bg="#000000">
     <div class="inner">
       <div class="contact">
         <h2>CONTACT</h2>
@@ -350,8 +358,14 @@
   </footer>
 
 
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/splidejs/4.1.4/js/splide.min.js"></script>
+  <script src="
+https://cdn.jsdelivr.net/npm/@splidejs/splide-extension-auto-scroll@0.5.3/dist/js/splide-extension-auto-scroll.min.js
+"></script>
   <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
-
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollToPlugin.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/TextPlugin.min.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
   <link
@@ -359,6 +373,8 @@
     rel="stylesheet">
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script type="module" src="/main.js"></script>
+
+
 </body>
 
 </html>

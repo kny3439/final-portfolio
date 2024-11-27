@@ -9,6 +9,14 @@
   margin: auto;
 }
 
+#about .inner figure figcaption p span {
+  font-family: "Pretendard-Regular";
+}
+
+#about .about-banner {
+  font-family: var(--font-family-Eng);
+}
+
 @media (max-width: 700px) {
   #about .about-banner {
     height: 80px;
@@ -119,9 +127,6 @@
   #about .inner figure figcaption p span {
     margin-right: 30px;
   }
-  #about .inner figure figcaption p span.kor {
-    font-size: 1rem;
-  }
   #about .inner figure figcaption p span:nth-child(1) {
     font-weight: bold;
   }
@@ -186,20 +191,16 @@
     display: none;
   }
   #about .inner figure figcaption p {
-    font-size: 1.7rem;
     margin: 20px 0;
   }
   #about .inner figure figcaption p span {
     margin-right: 30px;
   }
-  #about .inner figure figcaption p span.kor {
-    font-size: 1.2rem;
-  }
   #about .inner figure figcaption p span:nth-child(1) {
-    font-weight: bold;
+    font-weight: normal;
   }
   #about .inner figure figcaption .skill p {
-    font-weight: bold;
+    font-weight: normal;
   }
   #about .inner figure figcaption .skill ul {
     gap: 20px;
@@ -222,12 +223,12 @@
     align-items: center;
   }
   #about .inner .word ul {
-    margin: 20px 0;
+    margin: 30px 0;
     align-items: center;
   }
   #about .inner .word ul li {
-    font-size: 5rem;
-    margin: 0 50px;
+    font-size: 4.5rem;
+    margin: 0 20px;
   }
   #about .inner .word ul li.kor {
     font-size: 4rem;

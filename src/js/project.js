@@ -14,6 +14,7 @@ export function project() {
             prevEl: '#project .slide_arrow .prev',
         },
     });
+
     var RslideSwiper = new Swiper("#project .project_slide_r", {
         loop: true,
         speed: 1000,
@@ -29,12 +30,13 @@ export function project() {
             prevEl: '#project .slide_arrow .prev',
         },
     });
-}
 
-$('.project-mainmenu').click(function () {
+    $('.project-mainmenu').click(function () {
     $('.project-submenu').stop().slideDown()
 })
 $('.project-mainmenu ').click(function () {
     $('.project-submenu').stop().slideUp()
     $(this).addClass('on')
 })
+}
+

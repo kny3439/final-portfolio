@@ -31,10 +31,10 @@ export function project() {
         },
     });
 
-    $('.project-mainmenu').click(function () {
+    $('.project-mainmenu').mouseenter(function () {
     $('.project-submenu').stop().slideDown()
 })
-$('.project-mainmenu ').click(function () {
+$('.project-mainmenu ').mouseleave(function () {
     $('.project-submenu').stop().slideUp()
     $(this).addClass('on')
 })

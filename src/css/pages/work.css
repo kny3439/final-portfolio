@@ -18,7 +18,7 @@
   padding: 5px 20px;
   white-space: nowrap;
 }
-#work .work-title {
+#work .work-title, #work .desc-index {
   font-family: var(--font-family-Eng);
 }
 #work .work-list {
@@ -209,6 +209,12 @@
   #work .inner .work-desc .desc-index li.on {
     opacity: 1;
   }
+  #work .inner .work-desc .desc-index li.on p {
+    transform: translateY(0);
+  }
+  #work .inner .work-desc .desc-index li.on b {
+    transform: translateY(0);
+  }
   #work .inner .work-desc .desc-index li:nth-child(8) p {
     line-height: 230px;
   }
@@ -220,37 +226,45 @@
     color: var(--mainColor100-color);
     font-size: 7rem;
     font-weight: 300;
+    transform: translateY(100px);
+    transition: 0.35s;
   }
   #work .inner .work-desc .desc-index li a b {
     font-size: 1.5rem;
     display: block;
     padding: 0 5px;
+    transform: translateY(100px);
+    transition: 0.45s;
   }
   #work .inner .work-list {
     gap: 30px;
   }
-  #work .inner .work-list li {
+  #work .inner .work-list > div {
+    gap: 30px;
+    transform: translateX(12%);
+  }
+  #work .inner .work-list > div li {
     border: 1px solid #ffffff;
     border-radius: 25px;
     width: 500px;
   }
-  #work .inner .work-list li a {
+  #work .inner .work-list > div li a {
     display: block;
     border-radius: 25px;
     width: 100%;
     height: 100%;
     overflow: hidden;
   }
-  #work .inner .work-list li a img {
+  #work .inner .work-list > div li a img {
     -o-object-fit: cover;
        object-fit: cover;
-    filter: brightness(0.5);
-    transition: 0.7s;
+    filter: brightness(0.5) blur(3px);
+    transition: 0.5s;
   }
-  #work .inner .work-list li a.on img {
-    filter: brightness(1);
+  #work .inner .work-list > div li a.on img {
+    filter: brightness(1) blur(0);
   }
-  #work .inner .work-list li a:hover img {
+  #work .inner .work-list > div li a:hover img {
     transform: scale(1.07);
   }
 }
@@ -277,7 +291,7 @@
   }
   #work .inner {
     width: 100%;
-    height: 420px;
+    height: 450px;
     margin-top: 5%;
     overflow-x: hidden;
   }
@@ -347,31 +361,32 @@
     margin-bottom: 10px;
     font-size: 1.7rem;
   }
-  #work .inner .work-list {
+  #work .inner .work-list > div {
     gap: 30px;
+    transform: translateX(12%);
   }
-  #work .inner .work-list li {
+  #work .inner .work-list > div li {
     border: 1px solid #ffffff;
     border-radius: 25px;
     width: 500px;
   }
-  #work .inner .work-list li a {
+  #work .inner .work-list > div li a {
     display: block;
     border-radius: 25px;
     width: 100%;
     height: 100%;
     overflow: hidden;
   }
-  #work .inner .work-list li a img {
+  #work .inner .work-list > div li a img {
     -o-object-fit: cover;
        object-fit: cover;
-    filter: brightness(0.5);
+    filter: brightness(0.5) blur(3px);
     transition: 0.7s;
   }
-  #work .inner .work-list li a.on img {
-    filter: brightness(1);
+  #work .inner .work-list > div li a.on img {
+    filter: brightness(1) blur(0);
   }
-  #work .inner .work-list li a:hover img {
+  #work .inner .work-list > div li a:hover img {
     transform: scale(1.07);
   }
 }

@@ -22,18 +22,30 @@ export function work() {
         autoWidth: true,
         arrows: false,
         pagination: false,
-        autoScroll:{
-            speed:.7, // '-' 로 하면 반대로 감
-            pauseOnHover:true,// hover하면 멈춤
-            rewind:false, //serinterval 할 때 나갔다 들어오면 빨라지는거 조절
+        autoScroll: {
+            speed: .7, // '-' 로 하면 반대로 감
+            pauseOnHover: true,// hover하면 멈춤
+            rewind: false, //serinterval 할 때 나갔다 들어오면 빨라지는거 조절
         },
-        breakpoints:{
-            1200:{perPage:3},
-            640:{perPage:2}
+        breakpoints: {
+            1200: { perPage: 3 },
+            640: { perPage: 2 }
         }
     })
     splide.mount(window.splide.Extensions)
 
-    
-} 
+
+
+    $('.work-list li').mouseenter(function () {
+        $(this).children('a').addClass('on')
+        let idx=$(this).index()
+        $('.desc-index li').removeClass('on')
+        $('.desc-index li').eq(idx).addClass('on')
+    })
+    $('.work-list li').mouseleave(function () {
+        $(this).children('a').removeClass('on')
+        $('.desc-index li').removeClass('on')
+    })
+
+}
 

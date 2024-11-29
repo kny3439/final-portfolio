@@ -238,9 +238,12 @@
         .about-banner {
             font-size: 3rem;
             height: 80px;
+            contain: paint;
 
-            span {
-                margin: 0 30px
+            .splide__slide {
+                margin: 0 30px;
+                font-size: 2.5rem;
+                white-space: nowrap;
             }
         }
 

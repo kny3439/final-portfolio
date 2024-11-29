@@ -1,3 +1,5 @@
+
+
 #project {
     height: 100%;
     background-color: var(--black);
@@ -5,15 +7,31 @@
     display: flex;
     align-items: center;
 
+
     .inner {
         .project-title {
             .project-mn {
-                >div {
+                .text {
                     font-family: var(--font-family-Eng);
                 }
 
-                .text {
+                .mn {
                     font-family: var(--font-family-Eng);
+                    cursor: pointer; 
+                    span{
+                        padding: 0 10px;
+                    }
+                }
+
+                .project-submenu {
+                    width: 100%;
+                    background-color: var(--black);
+
+
+                    a {
+                        display: block;
+                        padding: 0 10px;
+                    }
                 }
             }
 
@@ -38,6 +56,7 @@
 
                     .project_slide_l {
                         .swiper-wrapper {
+
                             li {
                                 display: flex;
                                 gap: 50px;
@@ -50,13 +69,14 @@
                                     opacity: 1 !important;
                                     z-index: 99;
                                 }
-                        
+
                                 .txt {
                                     position: relative;
                                     padding-top: 40px;
                                     width: 330px;
                                     text-align: left;
                                     z-index: 99;
+
                                     span {
                                         font-family: var(--font-family-Eng);
                                     }
@@ -125,6 +145,7 @@
                         position: relative;
                         font-size: 25px;
                         width: 200px;
+                        border: 1px solid #dfdfdf;
 
                         >p {
                             border-bottom: 1px solid #ffffff;
@@ -506,6 +527,7 @@
 
                         .project-submenu {
                             position: absolute;
+
                             display: none;
 
                             li {
@@ -540,7 +562,7 @@
                                     flex-shrink: 0;
                                     width: 350px;
                                     height: 450px;
-                                    border: 1px solid #cbcbcb;
+                                    border: 1px solid #6fff4f;
                                     background: no-repeat center;
                                     background-size: cover;
                                 }
@@ -552,11 +574,32 @@
                             width: 770px;
                             margin: 0;
 
+
                             .swiper-wrapper {
+                                position: relative;
+
+
+                                &:hover .circle {
+                                    transform: scale(1);
+                                }
+
+
+                                // .circle {
+                                //     position: absolute;
+                                //     width: 255px;
+                                //     height: 255px;
+                                //     background-color: var(--mainColor200-color);
+                                //     border-radius: 50%;
+                                //     left: 370px;
+                                //     top: 30%;
+                                //     transform: scale(0);
+                                //     transition: .4s;
+                                // }
+
                                 li {
+                                    mix-blend-mode: difference;
 
                                     .txt {
-
 
                                         p {
                                             display: block;
@@ -593,10 +636,11 @@
                                     display: inline-flex;
                                     justify-content: center;
                                     align-items: center;
-                                    width: 50px;
-                                    height: 50px;
-                                    color: #fff;
+                                    width: 20px;
+                                    height: 20px;
+                                    color: #ffffff;
                                     transition: all .3s;
+                                    padding-left: 10px;
 
                                     &:hover {
                                         color: var(--mainColor200-color);

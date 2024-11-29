@@ -42,16 +42,35 @@
       <!-- <figure>
           <video src="./src/assets/217392.mp4" autoplay loop muted></video>
         </figure> -->
-      <div class="circle"></div>
+      <!-- <div class="circle"></div> -->
       <div class="inner">
-        <div class="title">
+        <div>
           <p>I want to be a</p>
-          <p>Creative</p>
-          <p>Challenge</p>
-          <p>Developer</p>
-          <p>Adventurer</p>
+          <div class="title-wrap">
+            <div class="title ">
+              <p class="introtext">Creative</p>
+              <p class="introtext">Challenge</p>
+              <p class="introtext">Developer</p>
+              <p class="introtext">Adventurer</p>
+            </div>
+          </div>
         </div>
-        <p>PUBLISHER</p>
+        <article id="mouse_area">
+          <div class="text-svg">
+            <svg class="svg-title" id="svgTitle" viewBox="0 0 770 116" preserveAspectRatio="xMidYMid meet">
+              <!-- width 값과 viewBox[2] 값을 통일 : 기본 크기 770 116 -->
+              <clipPath class="svg-circle" id="svgCircle">
+                <circle r="100" cx="200" cy="200"></circle>
+              </clipPath>
+
+              <path class="svg-logo" id="svgLogo"
+                d="M0,113.8V0.2h40.4c7.6,0,13.3,1.7,17.2,5.1c3.9,3.4,5.9,8.1,5.9,14.1V39c0,5.1-0.6,9.9-1.9,14.3  c-1.3,4.4-3.6,8-6.9,10.7s-8.1,4-14.4,4H23.3v45.8L0,113.8L0,113.8z M23.3,55.7h8.6c3.1,0,5.4-1.5,6.9-4.4c1.5-3,2.3-7.8,2.3-14.6  V29c0-6-0.6-10.3-1.9-12.9s-3.1-3.9-5.6-3.9H23.3V55.7z M125.9,116.1c-4.6,0-8.8-0.3-12.7-1c-3.8-0.6-7.2-2-10-4  c-2.8-2-5-5.1-6.5-9.1s-2.3-9.5-2.3-16.4V0.2h22.3v91.7c0,2.7,0.4,4.8,1.3,6.4c0.8,1.6,1.9,2.7,3.4,3.2s2.9,0.8,4.6,0.8  c1.5,0,3-0.3,4.4-0.8c1.4-0.5,2.5-1.6,3.4-3.2s1.3-3.8,1.3-6.4V0.2h22.3v85.4c0,6.8-0.8,12.2-2.3,16.3s-3.7,7.2-6.4,9.2  c-2.8,2-6.1,3.4-10,4C134.6,115.8,130.4,116.1,125.9,116.1z M192.3,113.8V0.2h40.4c7.2,0,12.7,1.7,16.4,5.1s5.7,8.1,5.7,14.1v12.9  c0,3.3-0.5,6.4-1.4,9.1c-1,2.8-2.4,5.1-4.3,7c-1.4,1.4-3.2,2.5-5.4,3.3c-2.2,0.8-4.3,1.2-6.4,1.4v0.2c2.2,0,4.3,0.3,6.4,0.8  c2.1,0.5,4,1.5,5.8,3.1c2.2,1.7,3.9,3.9,5.2,6.8c1.3,2.9,1.9,6.4,1.9,10.7v15.6c0,6.1-1.1,11-3.2,14.4s-5.1,5.9-9,7.2  c-3.9,1.4-8.6,2-13.9,2H192.3z M214.8,48.6h9c2.9,0,5.3-1,7-3.1c1.7-2,2.6-5.6,2.6-10.8V23.4c0-4-0.7-6.8-2.2-8.6  c-1.5-1.7-3.4-2.6-5.7-2.6h-10.8L214.8,48.6L214.8,48.6z M214.8,102.1h10.4c1.9,0,3.5-0.4,4.7-1.1c1.2-0.7,2.2-2,2.9-3.9  c0.7-1.9,1.1-4.7,1.1-8.5V75.2c0-5.1-0.9-8.5-2.6-10.1c-1.7-1.6-4-2.4-6.8-2.4h-9.6L214.8,102.1L214.8,102.1z M289.6,113.8V0.2h22.1  v98.3h25.8v15.4L289.6,113.8L289.6,113.8z M366.3,113.8V0.2h22.3v113.6L366.3,113.8L366.3,113.8z M452.8,115.2  c-6.8,0-12.6-1-17.4-2.9s-8.5-5.3-11.1-10.2s-3.9-11.7-3.9-20.6v-6.7c4,0,7.9,0,11.7,0s7.7,0,11.5,0v8.6c0,4.7,0.4,8.4,1.1,10.9  s1.9,4.2,3.3,5.2s3.1,1.4,5,1.4c3,0,5.3-1.1,7-3.2c1.7-2.1,2.6-6.3,2.6-12.4c0-4.7-0.7-8.3-2.2-10.7c-1.5-2.4-3.8-4.3-7-5.8  c-3.2-1.5-7.3-3.3-12.3-5.5c-4.5-1.9-8.2-4.2-11.1-6.9c-3-2.7-5.1-6.1-6.5-10.2s-2.1-9.1-2.1-15c0-7.4,1-13.5,3-18.1  c2-4.6,5.3-8,10-10.1c4.7-2.1,11-3.2,18.9-3.2c10.3,0,18.1,2.2,23.5,6.6c5.5,4.4,8.2,11.1,8.2,19.9v13.6c-3.7,0-7.4,0-11.1,0  s-7.4,0-11.3,0v-6.9c0-5.8-0.7-9.8-2-12.1c-1.4-2.3-3.8-3.5-7.2-3.5c-3.3,0-5.7,1-7.1,3.1c-1.4,2-2.1,5.4-2.1,10  c0,4.2,0.9,7.5,2.6,9.9s3.9,4.2,6.6,5.4c2.7,1.2,5.6,2.4,8.6,3.6c5.6,2.2,10.3,4.4,13.8,6.6s6.2,5.3,7.9,9.2s2.5,9.5,2.5,16.8  c0,8.2-1.4,14.7-4.1,19.5c-2.8,4.8-6.7,8.2-11.7,10.3C465.5,114.1,459.6,115.2,452.8,115.2z M518.4,113.8V0.2h22.3v46.5h18.7V0.2  h22.3v113.6h-22.3V63.2h-18.7v50.6L518.4,113.8L518.4,113.8z M617,113.8V0.2h52.3v15.8h-29v30.4h24.6v17.5h-24.6v34.6h29v15.4  L617,113.8L617,113.8z M700.5,113.8V0.2H742c7.6,0,13.3,1.7,17.1,5.1c3.8,3.4,5.8,8.1,5.8,14.1v17.7c0,6-1.6,11.1-4.8,15.2  s-8.2,6.5-15,7.1c4.4,0.6,7.5,2.1,9.3,4.3c1.9,2.2,3.5,5.9,4.9,10.9l10.8,39.2h-24.8L737,76.1c-0.8-3.1-1.6-5.7-2.6-7.8  c-1-2.1-2.3-3.2-4.1-3.2h-6.5v48.6L700.5,113.8L700.5,113.8z M723.7,49.6h9.2c3.6,0,6.2-1,7.7-3c1.5-2,2.3-5.2,2.3-9.5V23.4  c0-4.1-0.7-7-2.1-8.6s-3.6-2.5-6.5-2.5h-10.6L723.7,49.6L723.7,49.6z"
+                stroke-width="1"></path>
+              <use class="svg-text" id="svgText" xlink:href="#svgLogo"></use>
+              <use class="svg-circle" clip-path="url('#svgCircle')" xlink:href="#svgLogo"></use>
+            </svg>
+          </div>
+        </article>
       </div>
     </section>
     <!-- -------project--------- -->
@@ -60,13 +79,13 @@
         <div class="project-title flex">
           <div class="project-mn">
             <h1 class="text">PROJECT</h1>
-            <div>
+            <div class="mn">
               <p class="project-mainmenu"><span>View my works</span> <i class="fa-solid fa-chevron-down"></i></p>
               <ul class="project-submenu">
-                <li><a href="#">WEB RENEWAL</a></li>
-                <li><a href="#">APP PROJECT</a></li>
-                <li><a href="#">SYMBOL DESIGN</a></li>
-                <li><a href="#">PORTFOLIO WEBSITE</a></li>
+                <li><a href="#symbol">SYMBOL DESIGN</a></li>
+                <li><a href="#web">WEB RENEWAL</a></li>
+                <li><a href="#app">APP PROJECT</a></li>
+                <li><a href="#portfolio">PORTFOLIO WEBSITE</a></li>
               </ul>
             </div>
           </div>
@@ -83,7 +102,8 @@
             <div class="slide-area">
               <div class="project_slide_l swiper-container">
                 <ul class="swiper-wrapper">
-                  <li class="swiper-slide slide01">
+                  <div class="circle"></div>
+                  <li class="swiper-slide slide01" id="symbol">
                     <div class="img"></div>
                     <div class="txt">
                       <b>24.06</b>
@@ -95,7 +115,7 @@
                       </div>
                     </div>
                   </li>
-                  <li class="swiper-slide slide02">
+                  <li class="swiper-slide slide02" id="web">
                     <div class="img"></div>
                     <div class="txt">
                       <b>24.07</b>
@@ -107,7 +127,7 @@
                       </div>
                     </div>
                   </li>
-                  <li class="swiper-slide slide03">
+                  <li class="swiper-slide slide03" id="app">
                     <div class="img"></div>
                     <div class="txt">
                       <b>24.11</b>
@@ -119,7 +139,7 @@
                       </div>
                     </div>
                   </li>
-                  <li class="swiper-slide slide04">
+                  <li class="swiper-slide slide04" id="portfolio">
                     <div class="img"></div>
                     <div class="txt">
                       <b>24.11.24~ING</b>
@@ -217,7 +237,7 @@
                   <div class="summary"><b>jquery / Grid</b>
                   </div>
                 </a></li>
-              <li><a href="#">
+              <li class="on"><a href="#">
                   <p>CHEONGWADAE</p>
                   <div class="summary"><b>jquery / 반응형</b>
                   </div>
@@ -272,8 +292,20 @@
     <!-- -------skill--------- -->
     <section id="about" data-bg="#ffffff">
       <div class="about-banner">
-        <span>ABOUT ME🚀</span><span>ABOUT ME🚀</span><span>ABOUT ME🚀</span> <span>ABOUT ME🚀</span><span>ABOUT
-          ME🚀</span><span>ABOUT ME🚀
+        <div class="splide">
+          <div class="splide__track">
+            <ul class="splide__list flex">
+              <li class="splide__slide">ABOUT ME🚀</li>
+              <li class="splide__slide">ABOUT ME🚀</li>
+              <li class="splide__slide">ABOUT ME🚀</li>
+              <li class="splide__slide">ABOUT ME🚀</li>
+              <li class="splide__slide">ABOUT ME🚀</li>
+              <li class="splide__slide">ABOUT ME🚀</li>
+              <li class="splide__slide">ABOUT ME🚀</li>
+              <li class="splide__slide">ABOUT ME🚀</li>
+            </ul>
+          </div>
+        </div>
       </div>
       <div class="inner">
         <div class="introduce">
@@ -306,7 +338,7 @@
             <li class="side kor" style="font-weight: bold;">소통</li>
             <li class="top">REACT</li>
             <li class="side kor" style="font-weight: bold;">배움</li>
-            <li class="bottom">RESPONSIBILITY</li> 
+            <li class="bottom">RESPONSIBILITY</li>
           </ul>
           <ul class="flex">
             <li class="side kor">긍정적인</li>
@@ -332,7 +364,10 @@
         </div>
         <div class="contact-endless">
           <p class="endless">Endless</p>
-          <span class="endless flex"><figure><img src="./src/assets/endlessgif.gif" alt=""></figure><p>learning</p></span>
+          <span class="endless flex">
+            <figure><img src="./src/assets/endlessgif.gif" alt=""></figure>
+            <p>learning</p>
+          </span>
           <p class="white"> 현재에 안주 하지 않고 끝없이 배워 나가겠습니다.</p>
         </div>
         <div class="contact-desc">
@@ -343,7 +378,7 @@
       </div>
     </section>
   </main>
-  <footer id="footer" role="contentinfo"  data-bg="#000000">
+  <footer id="footer" role="contentinfo" data-bg="#000000">
     <div class="inner">
       <div class="contact">
         <h2>CONTACT</h2>
@@ -360,7 +395,7 @@
   </footer>
 
 
-  
+
   <script src="https://cdnjs.cloudflare.com/ajax/libs/splidejs/4.1.4/js/splide.min.js"></script>
   <script src="
 https://cdn.jsdelivr.net/npm/@splidejs/splide-extension-auto-scroll@0.5.3/dist/js/splide-extension-auto-scroll.min.js

@@ -38,4 +38,25 @@ export function about() {
 
     // 초기 실행
     animateOnScroll();
+
+
+    const splide2 = new Splide('#about .splide', {
+        type: 'loop',
+        drag: false,
+        gap: 30,
+        autoWidth: true,
+        arrows: false,
+        pagination: false,
+        autoScroll: {
+            speed: -1,
+            pauseOnHover: true,
+            rewind: false,
+        },
+        breakpoints: {
+            1200: { perPage: 3 },
+            640: { perPage: 2 }
+        }
+    })
+    splide2.mount(window.splide.Extensions)
+
 }

@@ -15,6 +15,7 @@ export function project() {
         },
     });
 
+
     var RslideSwiper = new Swiper("#project .project_slide_r", {
         loop: true,
         speed: 1000,
@@ -31,12 +32,26 @@ export function project() {
         },
     });
 
-    $('.project-mainmenu').mouseenter(function () {
-    $('.project-submenu').stop().slideDown()
-})
-$('.project-mainmenu ').mouseleave(function () {
-    $('.project-submenu').stop().slideUp()
-    $(this).addClass('on')
-})
+    $('.mn').mouseenter(function () {
+        $('.project-submenu').stop().slideDown();
+    })
+    $('.mn').mouseleave(function () {
+        $('.project-submenu').stop().slideUp();
+    })
+
+    $('.project-submenu li a').click(function (e) {
+        e.preventDefault();
+
+        const target = $(this).attr('href');
+
+        const targetSlide = $(target).closest('.swiper-slide');
+        const index = $('#project .project_slide_l .swiper-wrapper .swiper-slide').index(targetSlide);
+
+        LslideSwiper.slideToLoop(index);
+        RslideSwiper.slideToLoop(index);
+
+        return false
+    });
+
 }
 

@@ -5,11 +5,23 @@
   display: flex;
   align-items: center;
 }
-#project .inner .project-title .project-mn > div {
-  font-family: var(--font-family-Eng);
-}
 #project .inner .project-title .project-mn .text {
   font-family: var(--font-family-Eng);
+}
+#project .inner .project-title .project-mn .mn {
+  font-family: var(--font-family-Eng);
+  cursor: pointer;
+}
+#project .inner .project-title .project-mn .mn span {
+  padding: 0 10px;
+}
+#project .inner .project-title .project-mn .project-submenu {
+  width: 100%;
+  background-color: var(--black);
+}
+#project .inner .project-title .project-mn .project-submenu a {
+  display: block;
+  padding: 0 10px;
 }
 #project .inner .project-title .txt span {
   color: var(--mainColor200-color);
@@ -87,6 +99,7 @@
     position: relative;
     font-size: 25px;
     width: 200px;
+    border: 1px solid #dfdfdf;
   }
   #project .inner .project-title .project-mn > div > p {
     border-bottom: 1px solid #ffffff;
@@ -416,7 +429,7 @@
     flex-shrink: 0;
     width: 350px;
     height: 450px;
-    border: 1px solid #cbcbcb;
+    border: 1px solid #6fff4f;
     background: no-repeat center;
     background-size: cover;
   }
@@ -424,6 +437,15 @@
     flex-shrink: 0;
     width: 770px;
     margin: 0;
+  }
+  #project .inner .project-slide .project-inner .slide-area .project_slide_l .swiper-wrapper {
+    position: relative;
+  }
+  #project .inner .project-slide .project-inner .slide-area .project_slide_l .swiper-wrapper:hover .circle {
+    transform: scale(1);
+  }
+  #project .inner .project-slide .project-inner .slide-area .project_slide_l .swiper-wrapper li {
+    mix-blend-mode: difference;
   }
   #project .inner .project-slide .project-inner .slide-area .project_slide_l .swiper-wrapper li .txt p {
     display: block;
@@ -454,10 +476,11 @@
     display: inline-flex;
     justify-content: center;
     align-items: center;
-    width: 50px;
-    height: 50px;
-    color: #fff;
+    width: 20px;
+    height: 20px;
+    color: #ffffff;
     transition: all 0.3s;
+    padding-left: 10px;
   }
   #project .inner .project-slide .project-inner .slide-area .project_slide_l .slide_arrow p:hover {
     color: var(--mainColor200-color);

@@ -170,9 +170,12 @@
   #about .about-banner {
     font-size: 3rem;
     height: 80px;
+    contain: paint;
   }
-  #about .about-banner span {
+  #about .about-banner .splide__slide {
     margin: 0 30px;
+    font-size: 2.5rem;
+    white-space: nowrap;
   }
   #about .inner figure {
     width: 100%;

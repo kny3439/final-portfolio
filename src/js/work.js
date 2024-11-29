@@ -8,7 +8,7 @@ export function work() {
         scrollTrigger: {
             trigger: '#work',
             start: 'top top',
-            end: '+=8000',
+            end: '+=5000',
             pin: true,
             scrub: 1,
             snap: 'none',
@@ -23,9 +23,9 @@ export function work() {
         arrows: false,
         pagination: false,
         autoScroll: {
-            speed: .7, // '-' 로 하면 반대로 감
-            pauseOnHover: true,// hover하면 멈춤
-            rewind: false, //serinterval 할 때 나갔다 들어오면 빨라지는거 조절
+            speed: .7,
+            pauseOnHover: true,
+            rewind: false,
         },
         breakpoints: {
             1200: { perPage: 3 },

@@ -1,24 +1,29 @@
-@keyframes ani {
-  from {
-    transform: scale(0);
-  }
-  to {
-    transform: scale(1);
-  }
+.text-svg {
+  width: 90%;
+  height: auto;
+  background: #ccc;
+  margin: 0 auto;
 }
-.circle {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  z-index: 1;
-  margin: auto;
-  width: 650px;
-  height: 650px;
-  border-radius: 50%;
-  background: var(--mainColor100-color);
-  animation: ani 3s alternate;
+
+svg.svg-title {
+  display: block;
+  margin: 0 auto;
+  background-color: #000;
+}
+
+/* path */
+path.svg-logo {
+  fill: inherit;
+  stroke: #e0fffe;
+}
+
+.svg-text {
+  fill: #000000;
+}
+
+/* circle */
+.svg-circle {
+  fill: rgb(180, 255, 254);
 }
 
 #intro {
@@ -40,86 +45,110 @@
 }
 
 @media (max-width: 700px) {
-  #intro .circle {
-    width: 400px;
-    height: 400px;
-  }
-  #intro .inner {
-    height: 85vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-  }
-  #intro .inner .title {
-    font-size: 5rem;
-  }
-  #intro .inner .title p {
-    margin: 25px 0;
-  }
-  #intro .inner .title p:nth-child(1) {
-    font-size: 4rem;
-  }
-  #intro .inner .title p:not(:first-child) {
-    color: var(--mainColor100-color);
-  }
-  #intro .inner > p {
-    font-size: 7rem;
-    font-weight: 600;
-    letter-spacing: 2vw;
-  }
-}
-@media (min-width: 701px) {
-  #intro .circle {
-    width: 500px;
-    height: 500px;
-  }
-  #intro .inner {
-    height: 85vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-  }
-  #intro .inner .title {
-    font-size: 6rem;
-  }
-  #intro .inner .title p {
-    margin: 20px 0;
-  }
-  #intro .inner .title p:nth-child(1) {
-    font-size: 5rem;
-  }
-  #intro .inner .title p:not(:first-child) {
-    color: var(--mainColor100-color);
-  }
-  #intro .inner > p {
-    font-size: 9rem;
-    font-weight: 600;
-    letter-spacing: 3.3vw;
-  }
-}
-@media (min-width: 1200px) {
   #intro .inner {
     width: 90%;
+    height: 100%;
     margin: auto;
     z-index: 2;
     color: #fff;
     mix-blend-mode: difference;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10%;
   }
-  #intro .inner .title {
-    font-size: 7rem;
+  #intro .inner > div {
+    text-align: center;
   }
-  #intro .inner .title p {
-    margin: 0;
-  }
-  #intro .inner .title p:nth-child(1) {
+  #intro .inner > div > p {
     font-size: 5rem;
   }
-  #intro .inner .title p:not(:first-child) {
+  #intro .inner > div .title-wrap {
+    overflow: hidden;
+    height: 60px;
+  }
+  #intro .inner > div .title {
+    font-size: 4rem;
+    justify-content: center;
+  }
+  #intro .inner > div .title p {
+    margin: 0 10px;
+    text-align: center;
+  }
+  #intro .inner > div .title p {
     color: var(--mainColor100-color);
   }
-  #intro .inner > p {
-    font-size: 15vw;
-    font-weight: 600;
-    letter-spacing: 5vw;
+}
+@media (min-width: 701px) {
+  #intro .inner {
+    width: 90%;
+    height: 100%;
+    margin: auto;
+    z-index: 2;
+    color: #fff;
+    mix-blend-mode: difference;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10%;
+  }
+  #intro .inner > div {
+    text-align: center;
+  }
+  #intro .inner > div > p {
+    font-size: 6rem;
+  }
+  #intro .inner > div .title-wrap {
+    overflow: hidden;
+    height: 60px;
+  }
+  #intro .inner > div .title {
+    font-size: 4rem;
+    justify-content: center;
+  }
+  #intro .inner > div .title p {
+    margin: 0 10px;
+    text-align: center;
+  }
+  #intro .inner > div .title p {
+    color: var(--mainColor100-color);
+  }
+}
+@media (min-width: 1200px) {
+  #intro {
+    width: 100%;
+  }
+  #intro .inner {
+    width: 90%;
+    height: 100vh;
+    margin: auto;
+    z-index: 2;
+    color: #fff;
+    mix-blend-mode: difference;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10%;
+  }
+  #intro .inner > div {
+    text-align: center;
+  }
+  #intro .inner > div > p {
+    font-size: 10rem;
+  }
+  #intro .inner > div .title-wrap {
+    overflow: hidden;
+    height: 60px;
+  }
+  #intro .inner > div .title {
+    font-size: 4rem;
+    justify-content: center;
+  }
+  #intro .inner > div .title p {
+    margin: 0 10px;
+    text-align: center;
+  }
+  #intro .inner > div .title p {
+    color: var(--mainColor100-color);
   }
 }

@@ -5,6 +5,7 @@ import { project } from "./src/js/project.js";
 import { bgColor} from "./src/js/bgColor.js";
 import { work } from "./src/js/work.js";
 import { about } from "./src/js/about.js";
+import { cursor } from "./src/js/cursor.js";
 
 
 window.addEventListener('load', function () {
@@ -15,5 +16,6 @@ window.addEventListener('load', function () {
     work()
     about()
     intro()
+    cursor()
 })
 

@@ -10,10 +10,12 @@
 }
 #project .inner .project-title .project-mn .mn {
   font-family: var(--font-family-Eng);
-  cursor: pointer;
 }
 #project .inner .project-title .project-mn .mn span {
   padding: 0 10px;
+}
+#project .inner .project-title .project-mn .mn .cursor-box {
+  border: 1px solid #828282;
 }
 #project .inner .project-title .project-mn .project-submenu {
   width: 100%;
@@ -22,6 +24,7 @@
 #project .inner .project-title .project-mn .project-submenu a {
   display: block;
   padding: 0 10px;
+  cursor: none;
 }
 #project .inner .project-title .txt span {
   color: var(--mainColor200-color);
@@ -187,7 +190,6 @@
     position: absolute;
     right: 5%;
     bottom: 5%;
-    cursor: pointer;
     z-index: 9;
   }
   #project .inner .project-slide .project-inner .slide-area .project_slide_l .slide_arrow p {
@@ -331,7 +333,6 @@
     position: absolute;
     left: 400px;
     top: 330px;
-    cursor: pointer;
     z-index: 9;
   }
   #project .inner .project-slide .project-inner .slide-area .project_slide_l .slide_arrow p {
@@ -469,7 +470,6 @@
     position: absolute;
     left: 400px;
     top: 350px;
-    cursor: pointer;
     z-index: 9;
   }
   #project .inner .project-slide .project-inner .slide-area .project_slide_l .slide_arrow p {

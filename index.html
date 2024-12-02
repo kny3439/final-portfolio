@@ -9,9 +9,18 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
   <script src="https://kit.fontawesome.com/599a3a7868.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="style.css">
+  <style>
+    .link:hover .cursor {
+      transform: translate(-50%, -50%) scale(8);
+    }
+  </style>
 </head>
 
 <body>
+  <!-- <div class="cursor-box"> -->
+  <div class="cursor"></div>
+  <!-- </div> -->
+
   <header id="header" role="banner">
     <div class="header__inner">
       <nav class="header__nav" role="navigation" aria-label="메인메뉴">
@@ -79,14 +88,17 @@
         <div class="project-title flex">
           <div class="project-mn">
             <h1 class="text">PROJECT</h1>
-            <div class="mn">
+            <div class="mn link">
               <p class="project-mainmenu"><span>View my works</span> <i class="fa-solid fa-chevron-down"></i></p>
+              <!-- <div class="cursor-box">
+                <div class="cursor"></div> -->
               <ul class="project-submenu">
-                <li><a href="#symbol">SYMBOL DESIGN</a></li>
-                <li><a href="#web">WEB RENEWAL</a></li>
-                <li><a href="#app">APP PROJECT</a></li>
-                <li><a href="#portfolio">PORTFOLIO WEBSITE</a></li>
+                <li><a href="#" class="link">SYMBOL DESIGN</a></li>
+                <li><a href="#" class="link">WEB RENEWAL</a></li>
+                <li><a href="#" class="link">APP PROJECT</a></li>
+                <li><a href="#" class="link">PORTFOLIO WEBSITE</a></li>
               </ul>
+              <!-- </div> -->
             </div>
           </div>
           <div class="txt">
@@ -102,20 +114,19 @@
             <div class="slide-area">
               <div class="project_slide_l swiper-container">
                 <ul class="swiper-wrapper">
-                  <div class="circle"></div>
-                  <li class="swiper-slide slide01" id="symbol">
+                  <li class="swiper-slide slide01 link" id="symbol">
                     <div class="img"></div>
                     <div class="txt">
                       <b>24.06</b>
                       <span>SYMBOL DESIGN</span>
                       <p>나를 표현한 나만의 심볼 디자인</p>
                       <div class="flex">
-                        <em><a href="#">PROESS</a></em>
-                        <em><a href="#">FIGMA</a></em>
+                        <em><a href="#" class="link">PROESS</a></em>
+                        <em><a href="#" class="link">FIGMA</a></em>
                       </div>
                     </div>
                   </li>
-                  <li class="swiper-slide slide02" id="web">
+                  <li class="swiper-slide slide02 link" id="web">
                     <div class="img"></div>
                     <div class="txt">
                       <b>24.07</b>
@@ -127,7 +138,7 @@
                       </div>
                     </div>
                   </li>
-                  <li class="swiper-slide slide03" id="app">
+                  <li class="swiper-slide slide03 link" id="app">
                     <div class="img"></div>
                     <div class="txt">
                       <b>24.11</b>
@@ -139,7 +150,7 @@
                       </div>
                     </div>
                   </li>
-                  <li class="swiper-slide slide04" id="portfolio">
+                  <li class="swiper-slide slide04 link" id="portfolio">
                     <div class="img"></div>
                     <div class="txt">
                       <b>24.11.24~ING</b>
@@ -153,8 +164,8 @@
                   </li>
                 </ul>
                 <div class="slide_arrow">
-                  <p class="arrow prev"><span class="material-symbols-outlined">arrow_right_alt</span></p>
-                  <p class="arrow next"><span class="material-symbols-outlined">arrow_right_alt</span></p>
+                  <p class="arrow prev"><span class="material-symbols-outlined link">arrow_right_alt</span></p>
+                  <p class="arrow next"><span class="material-symbols-outlined link">arrow_right_alt</span></p>
                 </div>
               </div>
               <div class="project_slide_r swiper-container">
@@ -271,19 +282,19 @@
           </div>
           <ul class="flex work-list">
             <div class="flex">
-              <li><a href="#" class="on"><img src="./src/assets/work.jpg" alt=""></a></li>
-              <li><a href="#"><img src="./src/assets/work.jpg" alt=""></a></li>
-              <li><a href="#"><img src="./src/assets/work.jpg" alt=""></a></li>
-              <li><a href="#"><img src="./src/assets/work.jpg" alt=""></a></li>
-              <li><a href="#"><img src="./src/assets/work.jpg" alt=""></a></li>
-              <li><a href="#"><img src="./src/assets/work.jpg" alt=""></a></li>
-              <li><a href="#"><img src="./src/assets/work.jpg" alt=""></a></li>
-              <li><a href="#"><img src="./src/assets/work.jpg" alt=""></a></li>
-              <li><a href="#"><img src="./src/assets/work.jpg" alt=""></a></li>
-              <li><a href="#"><img src="./src/assets/work.jpg" alt=""></a></li>
-              <li><a href="#"><img src="./src/assets/work.jpg" alt=""></a></li>
-              <li><a href="#"><img src="./src/assets/work.jpg" alt=""></a></li>
-              <li><a href="#"><img src="./src/assets/work.jpg" alt=""></a></li>
+              <li class="link"><a href="#" class="on"><img src="./src/assets/work.jpg" alt=""></a></li>
+              <li class="link"><a href="#"><img src="./src/assets/work.jpg" alt=""></a></li>
+              <li class="link"><a href="#"><img src="./src/assets/work.jpg" alt=""></a></li>
+              <li class="link"><a href="#"><img src="./src/assets/work.jpg" alt=""></a></li>
+              <li class="link"><a href="#"><img src="./src/assets/work.jpg" alt=""></a></li>
+              <li class="link"><a href="#"><img src="./src/assets/work.jpg" alt=""></a></li>
+              <li class="link"><a href="#"><img src="./src/assets/work.jpg" alt=""></a></li>
+              <li class="link"><a href="#"><img src="./src/assets/work.jpg" alt=""></a></li>
+              <li class="link"><a href="#"><img src="./src/assets/work.jpg" alt=""></a></li>
+              <li class="link"><a href="#"><img src="./src/assets/work.jpg" alt=""></a></li>
+              <li class="link"><a href="#"><img src="./src/assets/work.jpg" alt=""></a></li>
+              <li class="link"><a href="#"><img src="./src/assets/work.jpg" alt=""></a></li>
+              <li class="link"><a href="#"><img src="./src/assets/work.jpg" alt=""></a></li>
             </div>
           </ul>
         </div>
@@ -307,53 +318,68 @@
           </div>
         </div>
       </div>
-      <div class="inner">
-        <div class="introduce">
-          <figure class="flex">
+      <div class="inner flex">
+        <div class="me">
+          <div>
             <img class="pc" src="./src/assets/me.jpg" alt="">
             <img class="mobile" src="./src/assets/me2.jpg" alt="">
-            <figcaption>
-              <p><span>NAME</span><span class="kor">김나연</span></p>
-              <p><span>BIRTH</span><span>2000 . 12 . 07</span></p>
-              <p><span>ADDRESS</span><span class="kor">서울특별시 영등포구</span></p>
-              <p><span>E-MAIL</span><span>kny8664@naver.com</span></p>
-              <div class="skill">
-                <p>SKILL</p>
-                <ul class="flex">
-                  <li><img src="./src/assets/htmltLOGO.png" alt=""></li>
-                  <li><img src="./src/assets/cssLOGO.png" alt=""></li>
-                  <li><img src="./src/assets/jslLOGO.png" alt=""></li>
-                  <li><img src="./src/assets/figmaLOGO.png" alt=""></li>
-                  <li><img src="./src/assets/photoshopLOGO.png" alt=""></li>
-                  <li><img src="./src/assets/illustrateLOGO.png" alt=""></li>
-                  <li><img src="./src/assets/githubLOGO.png" alt=""></li>
-                </ul>
-              </div>
-            </figcaption>
-          </figure>
+          </div>
         </div>
-        <div class="word">
-          <ul class="flex">
-            <li class="side">FLEXIBLE</li>
-            <li class="side kor" style="font-weight: bold;">소통</li>
-            <li class="top">REACT</li>
-            <li class="side kor" style="font-weight: bold;">배움</li>
-            <li class="bottom">RESPONSIBILITY</li>
-          </ul>
-          <ul class="flex">
-            <li class="side kor">긍정적인</li>
-            <li class="top">ENTERPRISING</li>
-            <li class="side">PRONTEND</li>
-            <li class="bottom kor">도전적인</li>
-          </ul>
-          <ul class="flex">
-            <li class="side" style="font-weight: bold;">DEVELOPER</li>
-            <li class="top kor" style="font-weight: bold;">협력적인</li>
-            <li class="side kor">창의적인</li>
-            <li class="bottom" style="font-weight: bold;">JAVASCRIPT</li>
-          </ul>
+        <div class="sticky">
+          <div class="desc">
+            <h2>디자인과 기술의 조화를 통해<br> 사용자에게
+              특별한 <span style="font-weight: 500;">빛</span>을 전하는<br>  웹 퍼블리셔가 되겠습니다.</h2>
+            <p>저는 디자인과를 졸업하며 시각적 아름다움을 창조하는 데서 큰 보람을 느꼈습니다.<br>
+              웹이라는 무한한 가능성을 발견하게 되었고, 자연스럽게 웹 퍼블리셔라는 목표를 품게 되었습니다.<br>
+              HTML로 구조를 세우고, CSS로 그 구조에 디자인을 입히며, JavaScript로 상호작용을 더하는 과정은<br>
+              단순한 코딩이 아니라 제 디자인과 아이디어를 실현하는 도구가 되었습니다.<br>
+              제 손끝에서 완성된 작업물이 사용자에게 작지만 특별한 빛이 되길 바랍니다.</p>
+          </div>
+          <div class="name">
+            <p><span>NAME</span><span class="kor">김나연</span></p>
+            <p><span>BIRTH</span><span>2000 . 12 . 07</span></p>
+            <p><span>ADDRESS</span><span class="kor">서울특별시 영등포구</span></p>
+            <p><span>E-MAIL</span><span>kny8664@naver.com</span></p>
+            <div class="skill">
+              <p>SKILL</p>
+              <ul class="flex">
+                <li><img src="./src/assets/htmltLOGO.png" alt=""></li>
+                <li><img src="./src/assets/cssLOGO.png" alt=""></li>
+                <li><img src="./src/assets/jslLOGO.png" alt=""></li>
+                <li><img src="./src/assets/figmaLOGO.png" alt=""></li>
+                <li><img src="./src/assets/photoshopLOGO.png" alt=""></li>
+                <li><img src="./src/assets/illustrateLOGO.png" alt=""></li>
+                <li><img src="./src/assets/githubLOGO.png" alt=""></li>
+              </ul>
+            </div>
+          </div>
+          <div class="word">
+            <ul class="flex">
+              <li class="side">FLEXIBLE</li>
+              <li class="side kor" style="font-weight: bold;">소통</li>
+              <li class="top">REACT</li>
+              <li class="side kor" style="font-weight: bold;">배움</li>
+
+            </ul>
+            <ul class="flex">
+              <li class="bottom">RESPONSIBILITY</li>
+              <li class="side kor">긍정적인</li>
+              <li class="bottom kor">도전적인</li>
+            </ul>
+            <ul class="flex">
+              <li class="top">ENTERPRISING</li>
+              <li class="side">PRONTEND</li>
+              <li class="top kor" style="font-weight: bold;">협력적인</li>
+            </ul>
+            <ul class="flex">
+              <li class="side" style="font-weight: bold;">DEVELOPER</li>
+              <li class="side kor">창의적인</li>
+              <li class="bottom" style="font-weight: bold;">JAVASCRIPT</li>
+            </ul>
+           
+          </div>
         </div>
-      </div>
+        </div>
     </section>
     <section id="introduce" data-bg="#ffffff">
       <div class="inner">

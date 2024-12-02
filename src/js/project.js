@@ -13,6 +13,9 @@ export function project() {
             nextEl: '#project .slide_arrow .next',
             prevEl: '#project .slide_arrow .prev',
         },
+        // pagination: {
+        //     el: ".project-submenu",
+        //   },
     });
 
 
@@ -30,6 +33,7 @@ export function project() {
             nextEl: '#project .slide_arrow .next',
             prevEl: '#project .slide_arrow .prev',
         },
+        
     });
 
     $('.mn').mouseenter(function () {
@@ -40,15 +44,18 @@ export function project() {
     })
 
     $('.project-submenu li a').click(function (e) {
-        e.preventDefault();
+        e.preventDefault(); //맨상단으로
 
-        const target = $(this).attr('href');
-
-        const targetSlide = $(target).closest('.swiper-slide');
-        const index = $('#project .project_slide_l .swiper-wrapper .swiper-slide').index(targetSlide);
-
-        LslideSwiper.slideToLoop(index);
-        RslideSwiper.slideToLoop(index);
+        // const target = $(this).attr('href');
+        // const targetSlide = $(target).closest('.swiper-slide');
+        // const index = $('#project .project_slide_l .swiper-wrapper .swiper-slide').index(targetSlide);
+        // LslideSwiper.slideToLoop(index);
+        // RslideSwiper.slideToLoop(index);
+        
+        let idx = $(this).parents("li").index();
+        // console.log(idx)
+        LslideSwiper.slideToLoop(idx);
+        RslideSwiper.slideToLoop(idx);
 
         return false
     });

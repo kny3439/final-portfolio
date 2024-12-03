@@ -1,19 +1,40 @@
 
 
 export function work() {
-    const list = gsap.utils.toArray('.work-list li')
-    gsap.to(list, {
-        xPercent: -100 * (list.length - 1),
-        ease: 'none',
-        scrollTrigger: {
-            trigger: '#work',
-            start: 'top top',
-            end: '+=5000',
-            pin: true,
-            scrub: 1,
-            snap: 'none',
+    const list = gsap.utils.toArray('.work-list li');
+
+    function resizeFunc() {
+        const bodyWidth = window.innerWidth;
+        const workList = document.querySelectorAll("#work .link");
+        let w = 0;
+        
+        workList.forEach((work)=>{
+            w = work.offsetWidth;
+        })
+        const slideW = w * list.length;
+        console.log(slideW)
+        if (bodyWidth > 700) {
+            // console.log(bodyWidth)
+            gsap.to(list, {
+                xPercent: -118 * (list.length - 1),
+                ease: 'none',
+                scrollTrigger: {
+                    trigger: '#work',
+                    start: 'top top',
+                    end: `+=${slideW}`,
+                    pin: true,
+                    scrub: 1,
+                    snap: 'none',
+                }
+            });
         }
-    })
+    }
+    resizeFunc();
+
+    window.addEventListener('resize', resizeFunc);
+    
+
+
 
     const splide = new Splide('.splide', {
         type: 'loop',
@@ -38,7 +59,7 @@ export function work() {
 
     $('.work-list li').mouseenter(function () {
         $(this).children('a').addClass('on')
-        let idx=$(this).index()
+        let idx = $(this).index()
         $('.desc-index li').removeClass('on')
         $('.desc-index li').eq(idx).addClass('on')
     })

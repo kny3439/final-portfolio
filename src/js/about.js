@@ -1,43 +1,59 @@
 import gsap from "gsap";
 
 export function about() {
-    // const sideElements = document.querySelectorAll(".side");
-    // const topElements = document.querySelectorAll(".top");
-    // const bottomElements = document.querySelectorAll(".bottom");
+    const sideElements = document.querySelectorAll(".side");
+    const topElements = document.querySelectorAll(".top");
+    const bottomElements = document.querySelectorAll(".bottom");
+    
+    function setInitialPositions() {
+      // 초기 위치 설정
+      gsap.set(sideElements, { x: -100, opacity: 0 });
+      gsap.set(topElements, { y: -100, opacity: 0 });
+      gsap.set(bottomElements, { y: 100, opacity: 0 });
+    }
+    
+    function animateOnScroll() {
+      // 각 방향별 애니메이션 처리
+      animateElements(sideElements, { x: 0 }); // .side 애니메이션 (왼쪽에서 제자리로)
+      animateElements(topElements, { y: 0 }); // .top 애니메이션 (위에서 제자리로)
+      animateElements(bottomElements, { y: 0 }); // .bottom 애니메이션 (아래에서 제자리로)
+    }
+    
+    function animateElements(elements, animationProps) {
+      elements.forEach((element, index) => {
+        const rect = element.getBoundingClientRect();
+        const windowHeight = window.innerHeight;
+    
+        if (rect.top < windowHeight && rect.bottom > 0) {
+          // 화면 안에 들어왔을 때
+          gsap.to(element, {
+            ...animationProps,
+            opacity: 1,
+            duration: 1,
+            delay: index * 0.2, // stagger 효과
+          });
+        } else {
+          // 화면을 벗어났을 때 초기 위치로 복귀
+          gsap.to(element, {
+            ...animationProps,
+            x: animationProps.x !== undefined ? -100 : 0,
+            y: animationProps.y !== undefined ? animationProps.y > 0 ? 100 : -100 : 0,
+            opacity: 0,
+            duration: 1,
+          });
+        }
+      });
+    }
+    
+    // 초기 위치 설정
+    setInitialPositions();
+    
+    // 스크롤 이벤트 감지
+    window.addEventListener("scroll", animateOnScroll);
+    
+    // 초기 실행
+    animateOnScroll();
 
-    // function animateOnScroll() {
-    //     animateElements(sideElements, { x: -100 }); // .side 애니메이션
-    //     animateElements(topElements, { y: 100 });  // .top 애니메이션
-    //     animateElements(bottomElements, { y: -100 }); // .bottom 애니메이션
-    // }
-
-    // function animateElements(elements, animationProps) {
-    //     const rect = elements[0]?.getBoundingClientRect();
-    //     const windowHeight = window.innerHeight;
-
-    //     if (rect && rect.top < windowHeight && rect.bottom > 0) {
-    //         // 요소들이 화면 안에 들어왔을 때 애니메이션 실행
-    //         gsap.to(elements, {
-    //             ...animationProps,
-    //             opacity: 1,
-    //             duration: 1,
-    //             stagger: {from:'random',each:0.5}, // 요소 간 간격 조정
-    //         });
-    //     } else {
-    //         // 요소들이 화면을 벗어났을 때 초기화
-    //         gsap.to(elements, {
-    //             ...animationProps,
-    //             opacity: 0,
-    //             duration: 1,
-    //         });
-    //     }
-    // }
-
-    // // 스크롤 이벤트 감지
-    // window.addEventListener("scroll", animateOnScroll);
-
-    // // 초기 실행
-    // animateOnScroll();
 
 
     const splide2 = new Splide('#about .splide', {

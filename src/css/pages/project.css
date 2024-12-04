@@ -1,9 +1,15 @@
+body {
+  height: 600vh;
+}
+
 #project {
   height: 100%;
+  width: 100%;
   background-color: var(--black);
   color: var(--white);
   display: flex;
   align-items: center;
+  border: 1px solid #f60000;
 }
 #project .inner .project-title .project-mn .text {
   font-family: var(--font-family-Eng);
@@ -364,6 +370,7 @@
 @media (min-width: 1100px) {
   #project {
     height: 100vh;
+    background-color: var(--black);
   }
   #project .inner {
     width: 90%;

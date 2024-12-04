@@ -24,14 +24,14 @@ export function work() {
                     end: `+=${slideW}`,
                     pin: true,
                     scrub: 1,
-                    snap: 'none',
+                    // snap: 'none',
                 }
             });
         }
     }
     resizeFunc();
 
-    window.addEventListener('resize', resizeFunc);
+    // window.addEventListener('resize', resizeFunc);
     
 
 

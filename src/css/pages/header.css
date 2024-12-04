@@ -5,6 +5,7 @@
   width: 100%;
   z-index: 99;
   font-family: var(--font-family-Eng);
+  transition: 0.4s;
 }
 #header .header__inner {
   display: flex;
@@ -136,5 +137,13 @@
   }
   #header .header__inner .header__nav_mobile + #header .header__inner .header__nav_mobile span::after {
     width: 15px;
+  }
+}
+@media (min-width: 801px) {
+  #header.on {
+    top: -100px;
+  }
+  #header li a.on {
+    border: 1px solid #ffffff;
   }
 }

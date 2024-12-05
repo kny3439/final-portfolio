@@ -9,7 +9,6 @@ body {
   color: var(--white);
   display: flex;
   align-items: center;
-  border: 1px solid #f60000;
 }
 #project .inner .project-title .project-mn .text {
   font-family: var(--font-family-Eng);
@@ -230,6 +229,7 @@ body {
   }
   #project .inner .project-title {
     width: 90%;
+    min-width: 600px;
     margin: auto;
     flex-direction: column;
   }
@@ -374,6 +374,7 @@ body {
   }
   #project .inner {
     width: 90%;
+    min-width: 1200px;
     margin: auto;
   }
   #project .inner .project-title {

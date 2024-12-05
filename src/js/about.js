@@ -13,10 +13,10 @@ export function about() {
     }
     
     function animateOnScroll() {
-      // 각 방향별 애니메이션 처리
-      animateElements(sideElements, { x: 0 }); // .side 애니메이션 (왼쪽에서 제자리로)
-      animateElements(topElements, { y: 0 }); // .top 애니메이션 (위에서 제자리로)
-      animateElements(bottomElements, { y: 0 }); // .bottom 애니메이션 (아래에서 제자리로)
+   
+      animateElements(sideElements, { x: 0 }); // .
+      animateElements(topElements, { y: 0 }); // .top 
+      animateElements(bottomElements, { y: 0 }); // .
     }
     
     function animateElements(elements, animationProps) {

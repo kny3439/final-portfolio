@@ -193,7 +193,8 @@
     top: 15%;
   }
   #introduce .inner .contact-title h2 {
-    font-size: 10rem;
+    font-size: 11rem;
+    font-weight: 600;
   }
   #introduce .inner .contact-title p {
     font-size: 1.3rem;
@@ -213,7 +214,8 @@
     margin-left: 25%;
   }
   #introduce .inner .contact-endless .endless {
-    font-size: 10rem;
+    font-size: 11rem;
+    font-weight: 600;
   }
   #introduce .inner .contact-endless span {
     align-items: center;

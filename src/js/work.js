@@ -58,13 +58,12 @@ export function work() {
 
 
     $('.work-list li').mouseenter(function () {
-        $(this).children('a').addClass('on')
         let idx = $(this).index()
         $('.desc-index>li').removeClass('on')
         $('.desc-index>li').eq(idx).addClass('on')
     })
     $('.work-list li').mouseleave(function () {
-        $(this).children('a').removeClass('on')
+
         $('.desc-index>li').removeClass('on')
     })
 

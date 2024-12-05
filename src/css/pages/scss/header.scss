@@ -173,11 +173,12 @@
     #header.on {
         top: -100px;
     }
-    #header{
-        li{
-            a{
-                &.on{
-                   border: 1px solid #ffffff; 
+
+    #header {
+        li {
+            a {
+                &.on {
+                    border: 1px solid #ffffff;
                 }
             }
         }

@@ -26,18 +26,18 @@ export function menu() {
         }
         prevScrollTop = currentScrollTop //
         console.log(prevScrollTop)
-        // sectionElems.forEach(function (section) {
-        //     const sectionTop = section.offsetTop
-        //     const threshold = sectionTop + 300
+        sectionElems.forEach(function (section) {
+            const sectionTop = section.offsetTop
+            const threshold = sectionTop + 300
 
-        //     if (stickyTitle) {
-        //         if (currentScrollTop > threshold) {
-        //             header.classList.add('on')
-        //         } else {
-        //             header.classList.remove('on')
-        //         }
-        //     }
+            if (stickyTitle) {
+                if (currentScrollTop > threshold) {
+                    header.classList.add('on')
+                } else {
+                    header.classList.remove('on')
+                }
+            }
 
-        // })
+        })
     })
 }

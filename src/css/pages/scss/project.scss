@@ -9,7 +9,6 @@ body {
     color: var(--white);
     display: flex;
     align-items: center;
-    border: 1px solid #f60000;
 
 
     .inner {
@@ -312,6 +311,7 @@ body {
         .inner {
             .project-title {
                 width: 90%;
+                min-width: 600px;
                 margin: auto;
                 flex-direction: column;
 
@@ -494,6 +494,7 @@ body {
 
         .inner {
             width: 90%;
+            min-width: 1200px;
             margin: auto;
 
             .project-title {

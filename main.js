@@ -6,6 +6,7 @@ import { bgColor } from "./src/js/bgColor.js";
 import { work } from "./src/js/work.js";
 import { about } from "./src/js/about.js";
 import { cursor } from "./src/js/cursor.js";
+import { contact } from "./src/js/contact.js";
 
 
 window.addEventListener('load', function () {
@@ -17,6 +18,7 @@ window.addEventListener('load', function () {
     about()
     intro()
     cursor()
+    contact()
 
 
     const scrollPosition = localStorage.getItem('scrollPosition');

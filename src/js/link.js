@@ -32,7 +32,6 @@ export function link() {
         yPercent: -200,
         pause: true,
         duration: .2,
-
     }).progress(1)
 
     ScrollTrigger.create({

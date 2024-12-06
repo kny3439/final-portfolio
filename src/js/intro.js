@@ -1,6 +1,4 @@
 export function intro() {
-
-
     let mouseX = 0; /* 초기 X위치값 Number */
     let mouseY = 0; /* 초기 Y위치값 Number */
 
@@ -81,36 +79,5 @@ export function intro() {
             $('.title').css({ 'marginTop': '0 ' })
         })
     }, 3000)
-
-    // const duration = 1
-    // const count = gsap.utils.toArray('.text').length
-    // const pause = 1
-    // const stagger = duration + pause
-    // const delay = stagger * (count - 1) + pause
-
-    // const tl = gsap.timeline()
-    // tl.from('.text', {
-    //     rotationX: -90,
-    //     y: 50,
-    //     duration: duration,
-    //     opacity: 0,
-    //     stagger: {
-    //         each: stagger,
-    //         repeat: -1,
-    //         repeatDelay: delay
-    //     }
-
-    // })
-    // tl.to('.text', {
-    //     rotationX: 90,
-    //     y: -50,
-    //     opacity: 0,
-    //     duration: duration,
-    //     stagger: {
-    //         each: stagger,
-    //         repeat: -1,
-    //         repeatDelay: delay
-    //     }
-    // }, 1)
 
 }

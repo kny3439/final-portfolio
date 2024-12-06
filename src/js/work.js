@@ -1,4 +1,5 @@
-
+import Splide from '@splidejs/splide';
+// import { gsap } from 'gsap';
 
 export function work() {
     const list = gsap.utils.toArray('.work-list li');

@@ -1,4 +1,5 @@
 import gsap from "gsap";
+import Splide from '@splidejs/splide';
 
 export function about() {
     const sideElements = document.querySelectorAll(".side");

@@ -1,3 +1,6 @@
+import { gsap } from 'gsap';
+// import ScrollTrigger from "gsap/ScrollTrigger";
+
 export function link() {
 
     // 각각의 section의 위치정보-*-----------

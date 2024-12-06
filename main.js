@@ -1,3 +1,5 @@
+import Lenis from 'lenis';
+
 import { intro } from "./src/js/intro.js";
 import { menu } from "./src/js/menu.js";
 import { link } from "./src/js/link.js";
@@ -36,6 +38,7 @@ window.addEventListener('resize', function () {
     }, 300)
 });
 
+//------------------lenis(scroll)
 const lenis = new Lenis();
 
 function raf(time) {

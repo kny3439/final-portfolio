@@ -1,3 +1,6 @@
+import Swiper from 'swiper/bundle'
+import 'swiper/css/bundle'
+
 export function project() {
     var LslideSwiper = new Swiper("#project .project_slide_l", {
         effect: 'fade',

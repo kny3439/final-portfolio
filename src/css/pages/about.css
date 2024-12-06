@@ -154,7 +154,6 @@
     position: relative;
     top: 10%;
     width: 60%;
-    border: 1px solid #000;
   }
   #about .inner .sticky .desc h2 {
     font-size: 2.6rem;
@@ -258,7 +257,6 @@
     position: relative;
     top: 10%;
     width: 60%;
-    border: 1px solid #000;
   }
   #about .inner .sticky .desc h2 {
     font-size: 3.5rem;

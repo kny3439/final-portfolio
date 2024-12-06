@@ -1,4 +1,7 @@
 import { gsap } from 'gsap';
+import ScrollTrigger from "gsap/ScrollTrigger";
+// import ScrollTrigger from "gsap/SplitText";
+
 
 // ScrollTrigger 플러그인 등록
 gsap.registerPlugin(ScrollTrigger, SplitText);

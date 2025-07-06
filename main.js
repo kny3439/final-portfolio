@@ -1,4 +1,9 @@
 import Lenis from 'lenis';
+import { gsap } from "gsap";
+import { SplitText } from "gsap/SplitText";
+gsap.registerPlugin(SplitText);
+
+
 
 import { intro } from "./src/js/intro.js";
 import { menu } from "./src/js/menu.js";

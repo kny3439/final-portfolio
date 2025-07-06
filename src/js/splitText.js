@@ -1,4 +1,7 @@
- 
+import { gsap } from "gsap";
+import { SplitText } from "gsap/SplitText";
+gsap.registerPlugin(SplitText);
+
 
 !(function (D, u) {
   'object' == typeof exports && 'undefined' != typeof module

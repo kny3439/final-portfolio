@@ -318,25 +318,25 @@ body {
     flex-shrink: 0;
     width: 350px;
     height: 450px;
-    background-image: url(../../../assets//project1.png);
+    background-image: url(/src/assets/project1.png);
   }
   #project .inner .project-slide .project-inner .slide-area ul li.slide02 .img {
     flex-shrink: 0;
     width: 350px;
     height: 450px;
-    background-image: url(../../../assets//project2.png);
+    background-image: url(/src/assets/project2.png);
   }
   #project .inner .project-slide .project-inner .slide-area ul li.slide03 .img {
     flex-shrink: 0;
     width: 350px;
     height: 450px;
-    background-image: url(../../../assets//project3.png);
+    background-image: url(/src/assets/project3.png);
   }
   #project .inner .project-slide .project-inner .slide-area ul li.slide04 .img {
     flex-shrink: 0;
     width: 350px;
     height: 450px;
-    background-image: url(../../../assets//project4.png);
+    background-image: url(/src/assets/project4.png);
   }
   #project .inner .project-slide .project-inner .slide-area .project_slide_l {
     flex-shrink: 0;
@@ -488,25 +488,25 @@ body {
     flex-shrink: 0;
     width: 350px;
     height: 450px;
-    background-image: url(../../../assets//project1.png);
+    background-image: url(/src/assets/project1.png);
   }
   #project .inner .project-slide .project-inner .slide-area ul li.slide02 .img {
     flex-shrink: 0;
     width: 350px;
     height: 450px;
-    background-image: url(../../../assets//project2.png);
+    background-image: url(/src/assets/project2.png);
   }
   #project .inner .project-slide .project-inner .slide-area ul li.slide03 .img {
     flex-shrink: 0;
     width: 350px;
     height: 450px;
-    background-image: url(../../../assets//project3.png);
+    background-image: url(/src/assets/project3.png);
   }
   #project .inner .project-slide .project-inner .slide-area ul li.slide04 .img {
     flex-shrink: 0;
     width: 350px;
     height: 450px;
-    background-image: url(../../../assets//project4.png);
+    background-image: url(/src/assets/project4.png);
   }
   #project .inner .project-slide .project-inner .slide-area .project_slide_l {
     flex-shrink: 0;

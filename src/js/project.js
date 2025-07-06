@@ -49,11 +49,7 @@ export function project() {
     $('.project-submenu li a').click(function (e) {
         e.preventDefault(); //맨상단으로
 
-        // const target = $(this).attr('href');
-        // const targetSlide = $(target).closest('.swiper-slide');
-        // const index = $('#project .project_slide_l .swiper-wrapper .swiper-slide').index(targetSlide);
-        // LslideSwiper.slideToLoop(index);
-        // RslideSwiper.slideToLoop(index);
+
         
         let idx = $(this).parents("li").index();
         // console.log(idx)
